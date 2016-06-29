@@ -1,5 +1,5 @@
 {
-  "name": "loopback-connector-redis",
+  "name": "loopback-connector-redisnext",
   "version": "0.0.3",
   "description": "The official Redis connector for the LoopBack Framework.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strongloop/loopback-connector-redis.git"
+    "url": "git+https://github.com/sqlwwx/loopback-connector-redis.git"
   },
   "keywords": [
     "connector",
@@ -22,17 +22,17 @@
   "author": "StrongLoop <callback@strongloop.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strongloop/loopback-connector-redis/issues"
+    "url": "https://github.com/sqlwwx/loopback-connector-redis/issues"
   },
-  "homepage": "https://github.com/strongloop/loopback-connector-redis#readme",
+  "homepage": "https://github.com/sqlwwx/loopback-connector-redis#readme",
   "devDependencies": {
-    "bluebird": "^2.9.0",
-    "loopback-datasource-juggler": "^2.7.0",
-    "mocha": "^2.3.4",
-    "should": "~8.0.2"
+    "bluebird": "^3.4.1",
+    "loopback-datasource-juggler": "^2.46.1",
+    "mocha": "^2.5.3",
+    "should": "^9.0.2"
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "redis": "^0.12.1"
+    "async": "^2.0.0-rc.6",
+    "redis": "^2.6.2"
   }
 }
