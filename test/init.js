@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = require('should');
 
 var DataSource = require('loopback-datasource-juggler').DataSource;
