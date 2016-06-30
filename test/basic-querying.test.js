@@ -780,6 +780,12 @@ describe.skip('queries', function() {
   });
 });
 
+describe('clean', function() {
+  it('Users', function(done) {
+    User.destroyAll(done);
+  })
+});
+
 function seed(done) {
   var beatles = [
     {
