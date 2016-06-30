@@ -4,7 +4,9 @@
   "description": "The official Redis connector for the LoopBack Framework.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -b"
+    "test": "mocha -b",
+    "lint": "eslint . --fix",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
   "homepage": "https://github.com/sqlwwx/loopback-connector-redis#readme",
   "devDependencies": {
     "bluebird": "^3.4.1",
+    "eslint": "^2.13.1",
+    "eslint-config-loopback": "^4.0.0",
     "loopback-datasource-juggler": "^2.46.1",
     "mocha": "^2.5.3",
     "should": "^9.0.2"
