@@ -7,7 +7,7 @@ var ModelBuilder = juggler.ModelBuilder;
 var Schema = juggler.Schema;
 
 global.getSchema = function() {
-    var db = new DataSource(require('../'), { debug: true });
+    var db = new DataSource(require('../'), { debug: true, db: 'loopback-connector-redis-test' });
     // db.log = function (a) { console.log(a); };
     return db;
 };
