@@ -2,7 +2,7 @@
 
 module.exports = require('should');
 
-var juggler = require('loopback-datasource-juggler');
+var juggler = require('loopback-datasource-jugglernext');
 
 var DataSource = juggler.DataSource;
 var ModelBuilder = juggler.ModelBuilder;
