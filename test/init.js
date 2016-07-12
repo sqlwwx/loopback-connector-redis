@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = require('should');
 
 var juggler = require('loopback-datasource-juggler');

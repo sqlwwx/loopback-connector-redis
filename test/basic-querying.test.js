@@ -1,3 +1,5 @@
+'use strict';
+
 // Copyright IBM Corp. 2013,2016. All Rights Reserved.
 // Node module: loopback-datasource-juggler
 // This file is licensed under the MIT License.
@@ -575,7 +577,7 @@ describe('basic-querying', function() {
         User.exists(u.id, function(err, exists) {
           should.not.exist(err);
           should.exist(exists);
-          exists.should.be.ok;
+          exists.should.be.eql(true);
           done();
         });
       });
@@ -585,7 +587,7 @@ describe('basic-querying', function() {
       User.destroyAll(function() {
         User.exists(42, function(err, exists) {
           should.not.exist(err);
-          exists.should.not.be.ok;
+          exists.should.be.eql(false);
           done();
         });
       });

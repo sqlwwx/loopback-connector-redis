@@ -1,3 +1,5 @@
+'use strict';
+
 var should = require('./init.js');
 
 var db, Model;
@@ -17,7 +19,7 @@ describe.skip('json-parsing', function() {
       Model.find(mm.id, function(err, mmm) {
         should.not.exist(err);
         should.exist(mmm);
-        mmm.name.should.be.a.String;
+        mmm.name.should.be.type('string');
         mmm.name.should.equal('{"property": true}');
         done();
       });
