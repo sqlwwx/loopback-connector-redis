@@ -3,3 +3,7 @@ node_modules
 dump.rdb
 coverage
 loopback-connector-redis-*.tgz
+
+!intl/
+intl/*
+!intl/en/
